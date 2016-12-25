@@ -1,0 +1,58 @@
+
+.menu
+	ul 
+		list-style: none
+		margin-top: 40px
+		li 
+			a 
+				padding: 5px
+				color: $branco
+				&:hover
+					text-decoration: none
+					color: $verde
+					+transition(.4s)
+	+breakpoint($tablet)
+		display: none				
+
+.menu-responsivo
+	position: fixed
+	width: 150px
+	height: 100%
+	left: -150px
+	top: 0
+	+gradient(0deg, $verde, $azul)
+	&.ativo
+		left: 0px
+	ul 
+		list-style: none
+		margin-left: -38px
+		li 
+			a
+				padding: 7px
+				display: block
+				color: $branco
+				&:hover,
+				&:focus
+					+transition(.2s)
+					text-decoration: none
+					background-color: $branco
+					color: $preto
+
+.layout
+	&.ativo 
+		+transition(.4s)
+		padding-left: 150px					
+
+
+.toggle
+	float: right
+	margin-top: -35px
+	display: none
+	i 
+		font-size: 30px
+		color: $branco
+	+breakpoint($tablet)
+		display: inline	
+		margin-top: 30px
+
+	

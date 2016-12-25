@@ -1,0 +1,79 @@
+@import page/mixins
+
+.socialtopo
+	+make-sm-column(6)
+	ul 
+		margin-top: -45px
+		li
+			display: inline 
+			list-style: none
+			i 
+				padding: 5px
+				font-size: 15px
+			a 
+				color: $branco
+				&:hover
+					text-decoration: none	
+	position: relative
+	+breakpoint($tablet)
+		+make-sm-column(12)
+		text-align: center
+		margin-top: -50px
+	+breakpoint($celubot)
+		text-align: center	
+		margin-top: -95px	
+	+breakpoint($celular)
+		strong
+			display: none	
+		em 
+			display: none			
+
+
+
+
+
+
+.botoestopo
+	.cotacao 
+		&:hover 
+			background-color: #2fb453 
+		a 
+			margin-left: 10px
+			margin-right: 10px	
+	+make-sm-column(6)
+	ul 
+		margin-top: -45px
+		margin-left: 200px
+		li 
+			list-style: none
+			display: inline
+			margin-right: 15px
+			border: solid 1px $branco
+			border-radius: 25px
+			padding-top: 6px
+			padding-bottom: 6px
+			&:hover
+				background-color: #1e285c
+				border: solid 1px transparent
+				+transition(.5s)
+				a
+					text-decoration: none
+					color: $branco
+	a 
+		margin-left: 30px
+		margin-right: 30px
+		color: $branco
+	white-space: nowrap
+	+breakpoint($celubot)
+		text-align: center
+		margin-top: 60px
+		margin-left: -180px	
+	+breakpoint($celular)
+		margin-left: -210px	
+
+	
+			
+
+	
+
+		
