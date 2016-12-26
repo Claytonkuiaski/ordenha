@@ -1,0 +1,59 @@
+body
+	div 
+		font-family: open Sans
+
+.chamada-slide
+	+make-sm-column(6)
+	h1,
+	h2, 
+	h3
+		color: $branco
+	h1 
+		margin-top: 100px	
+		margin-left: 50px	
+		font-size: 40px
+		white-space: nowrap
+		+breakpoint($tablet)
+			margin-left: 0
+			text-align: center
+	h2 
+		margin-left: 140px	
+		margin-top: -10px
+		font-size: 40px
+		white-space: nowrap
+		+breakpoint($tablet)
+			margin-left: 0
+			text-align: center
+	h3	
+		font-size: 20px
+		margin-left: 230px
+		margin-top: 40px	
+		white-space: nowrap
+		+breakpoint($tablet)
+			margin-left: 0
+			text-align: center
+		a
+			color: $branco
+			border: solid 1px $branco
+			border-radius: 40px
+			padding: 8px
+			&:hover,
+			&:focus
+				text-decoration: none
+				background-color: $branco
+				color: $preto
+				font-weight: $bold
+				+transition(1.5s)
+	i 
+		margin-right: 10px
+		margin-left: 10px			
+
+
+.logo-slide2
+	+make-sm-column(6)		
+	img 
+		+img-responsive
+		width: 1000px	
+		margin: 0 auto	
+		padding-top: 20px
+	
