@@ -1,0 +1,113 @@
+
+footer
+	min-height: 550px	
+	background:
+		image: url('../images/fundo-rodape2.png') 
+		repeat: no-repeat
+		position: top center
+		size: cover
+		width: 100%
+		height: 100%	
+	margin-top: 190px
+	+breakpoint($celubot)
+		margin-top: 30px
+
+
+	.rodape 
+		+make-sm-column(12)
+		text-align: center
+		h1 	
+			margin-top: 50px
+			color: $verde
+			font-size: 35px
+			+breakpoint($celubot)
+				margin-top: 0px
+		h2 
+			color: $preto
+			font-size: 20px	
+			margin-bottom: 50px
+		a 
+			padding-top: 5px
+			padding-bottom: 8px
+			padding-left: 30px
+			padding-right: 30px	
+			font-size: 30px
+			border: solid 2px $verde
+			border-radius: 40px
+			color: $verde
+			white-space: nowrap			
+			&:hover
+				+transition(.4s)
+				text-decoration: none
+				background-color: $verde-escuro
+				color: $branco
+				border: none
+		+breakpoint($celubot)	
+			a 
+				font-size: 20px					
+	.endereco
+		background-color: $verde-escuro
+		width: 100%
+		height: 95px	
+		margin-top: 60px
+		p
+			text-align: center
+			color: $branco
+			padding-top: 30px
+			font-size: 25px
+			+breakpoint($celubot)
+				font-size: 18px
+	.menu-rodape
+		ul 
+			list-style: none
+			margin-top: 70px
+			li 
+				a 
+					padding: 5px
+					color: $azul
+					&:hover
+						text-decoration: none
+						color: $verde
+		+breakpoint($tablet)
+			+make-sm-column(12)	
+			text-align: center			
+	.logo-rodape
+		+make-sm-column(6)
+		margin-top: 25px
+		img 
+			+img-responsive
+			width: 280px
+			margin-top: 20px								
+		+breakpoint($tablet)
+			+make-sm-column(12)	
+			img 
+				+img-responsive
+				margin: 0 auto
+				padding-top: 20px
+	.social-rodape
+		+make-sm-column(3)
+		+make-sm-column-offset(9)
+		ul 
+			margin-left: 50px
+			li
+				display: inline 
+				list-style: none
+				i 
+					padding: 5px
+					font-size: 20px
+				a 
+					&:hover
+						text-decoration: none	
+		+breakpoint($tablet)
+			+make-sm-column(12)
+			margin-left: 0px	
+			text-align: center
+			ul 
+				margin-left: 0px
+				li 
+					i 
+						font-size: 30px	
+
+		.youtube
+			a 
+				color: $vermelho					
