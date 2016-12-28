@@ -136,3 +136,59 @@ main
 
 
 
+
+.botao-noticias
+	+make-sm-column(6)
+	text-align: center
+	margin-top: 50px
+	a
+		padding-top: 5px
+		padding-bottom: 5px
+		padding-left: 130px
+		padding-right: 130px	
+		font-size: 30px
+		border: solid 1px $preto
+		box-shadow: 10px 10px 30px $preto
+		color: $preto
+		white-space: nowrap
+		&:hover
+			+transition(.4s)
+			text-decoration: none
+			background-color: $amarelo
+			color: $branco
+			border: none
+	+breakpoint($tablet)
+		+make-sm-column(12)	
+	+breakpoint($celular)	
+		a 
+			font-size: 20px	
+			padding-left: 80px
+			padding-right: 80px
+
+.botao-cotacao
+	+make-sm-column(6)
+	text-align: center
+	margin-top: 50px
+	a
+		padding-top: 5px
+		padding-bottom: 5px
+		padding-left: 80px
+		padding-right: 80px	
+		font-size: 30px
+		border: solid 1px $preto
+		box-shadow: 10px 10px 30px $preto
+		color: $preto
+		white-space: nowrap
+		&:hover
+			+transition(.4s)
+			text-decoration: none
+			background-color: $verde
+			color: $branco
+			border: none
+	+breakpoint($tablet)
+		+make-sm-column(12)				
+	+breakpoint($celular)	
+		a 
+			font-size: 20px			
+			padding-left: 48px
+			padding-right: 48px			
