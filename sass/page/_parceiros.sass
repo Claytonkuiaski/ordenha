@@ -1,0 +1,26 @@
+
+.parceiros
+	+make-sm-column(12)
+	margin-top: 60px
+	box-shadow: 0px 3px 30px $sombra
+	img 
+		+img-responsive
+		display: inline
+		margin-top: 30px
+		margin-bottom: 30px
+		width: 200px
+	.parceiro1
+		margin-left: 50px
+	+breakpoint($tablet)
+		img 
+			width: 130px
+		.parceiro1
+			margin-left: 0px
+	+breakpoint($celubot)
+		img 
+			+img-responsive
+			margin: 0 auto
+			width: 300px
+			padding: 20px
+		.parceiro1
+			margin: 0 auto
