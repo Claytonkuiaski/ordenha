@@ -29,8 +29,7 @@ main
 				margin-left: 0px
 		+breakpoint($celubot)
 			margin-top: 400px		
-			
-					
+							
 	.vaca 
 		+make-sm-column(3)	
 		img
@@ -68,21 +67,72 @@ main
 			img 
 				margin-left: 40%		
 
-				
-
-
-	.copo1,
-	.copo2,
-	.copo3,
-	.copo4
-		margin-top: 30px
-		+make-sm-column(12)	
+	.copos
 		img 
-			float: left
-			width: 150px
-			margin: 0 
+			width: 105px
+			padding: 10px
+		i 
+			img	
+				width: 100px
+				margin-top: 30px
+				padding-right: 40px
 			
 		h3 
 			color: $verde	
 			text-align: center
+	.copo1
+	.copo1,
+	.copo2,
+	.copo3,
+	.copo4
+		+make-sm-column(3)
+		img
+			+img-responsive
+			margin: 0 auto
+	.copo1
+		img 
+			margin-top: -80px	
+		+breakpoint($tablet)
+			img
+				margin-top: 50px	
+		+breakpoint($celubot)
+			img 
+				margin-top: 150px		
+	.copo2
+		img 
+			margin-top: -80px
+		+breakpoint($tablet)
+			img
+				margin-top: 50px			
+	.copo3
+		img 
+			margin-top: -80px
+		+breakpoint($tablet)
+			img
+				margin-top: 50px			
+	.copo4
+		img 
+			margin-top: -80px	
+		+breakpoint($tablet)
+			img
+				margin-top: 50px												
+	.flechas
+		margin-top: 100px
+		+make-sm-column(12)	
+		img 
+			+img-responsive
+			width: 100px
+			margin: 0 auto
+		+breakpoint($tablet)
+			display: none	
+	.flecha1,
+	.flecha2,
+	.flecha3
+		+make-sm-column(4)		
+	.flecha1
+		padding-left: 170px	
+	.flecha3
+		padding-right: 170px	
+
+
 
