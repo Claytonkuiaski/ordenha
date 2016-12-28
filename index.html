@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/home.css">	
 	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 	<link rel="stylesheet" href="css/plugins.css">
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
@@ -27,7 +28,7 @@
 			<div class="faixa">
 			</div>
 			<div class="container">
-				<div class="socialtopo">
+				<div class="socialtopo wow rotateInDownLeft" data-wow-duration="1.5s" data-wow-delay="0s">
 					<ul>
 						<li>
 							<a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
@@ -47,7 +48,7 @@
 					</ul>
 				</div>
 			
-				<div class="botoestopo">	
+				<div class="botoestopo wow rotateInDownRight" data-wow-duration="1.5s" data-wow-delay="0s">	
 					<ul>
 						<li class="noticias">
 							<a href="">Notícias</a>
@@ -59,10 +60,10 @@
 				</div>		
 			</div>
 			<div class="container">
-				<div class="logo-slide">
+				<div class="logo-slide wow rollIn" data-wow-duration="1s" data-wow-delay="0s">
 					<img src="images/logo-slide.png" alt="logo">
 				</div>
-				<nav class="menu">
+				<nav class="menu wow fadeInDown" data-wow-duration="1s" data-wow-delay="0s">
 					<ul>
 						<li>
 							<a href="">Início</a>
@@ -83,7 +84,7 @@
 					<h2><strong>consectetur</strong> adipis</h2>
 					<h3><a href=""><i class="fa fa-info-circle" aria-hidden="true"></i>loren Ipsum Dolor</a></h3>	
 				</div>
-				<div class="logo-slide2">
+				<div class="logo-slide2 wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.5s">
 					<img src="images/logo-slide2.png" alt="Logo">
 				</div>
 			</div>	
@@ -95,7 +96,7 @@
 					<h4>Voluptatibus sapiente, quidem, officia totam assumerda incidunt num <p>quam tenetur, exepturi corporis explicabo atquealias.</p></h4>
 				</div>	
 				<div class="beneficios">
-					<div class="vaca">
+					<div class="vaca wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0s">
 						<img src="images/vaca.png" alt="">
 					</div>				
 					<div class="beneficio1">
@@ -145,14 +146,14 @@
 				</div>		
 		</main>	
 			<div class="container">
-				<div class="botao-noticias">	
+				<div class="botao-noticias wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0s">	
 					<a href="">Notícias</a>
 				</div>	
-				<div class="botao-cotacao">
+				<div class="botao-cotacao wow bounceInRight" data-wow-duration="1s" data-wow-delay="0s">
 					<a href="">Cotação Online</a>
 				</div>
 			</div>
-			<div class="parceiros">
+			<div class="parceiros wow bounceInUp" data-wow-duration="1s" data-wow-delay="1.5s">
 				<div class="container">
 					<a href=""><img src="images/parceiro1.jpg" alt="" class="parceiro1"></a>
 					<a href=""><img src="images/parceiro2.jpg" alt="" class="parceiro2"></a>
@@ -173,10 +174,10 @@
 				<p>Av. Ministro Cirne, 1935  jd. Coopagro, Toledo-PR - CEP:85.903-590</p>
 			</div>
 			<div class="container">
-				<div class="logo-rodape">
+				<div class="logo-rodape wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
 					<img src="images/logo-rodape.png" alt="logo">
 				</div>
-				<div class="menu-rodape">
+				<div class="menu-rodape wow bounceInUp" data-wow-duration="1s" data-wow-delay="0s">
 					<ul>
 						<li>
 							<a href="">Início</a>
@@ -203,22 +204,9 @@
 				</div>
 			</div>
 		</footer>
-
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
 	<script>
 		$(function(){				
 			$('.toggle').click(function(){
