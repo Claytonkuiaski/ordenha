@@ -39,6 +39,17 @@
 					</ul>
 				</div>
 			</div>
+
+
+
+			<div class="container-fluid">
+				<div class="vaca-feliz">
+					<img src="images/vaca-feliz.png" alt="">
+				</div>
+				<div class="leite">
+					<img src="images/leite.png" alt="">
+				</div>
+			</div>	
 		</footer>
 	</div>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>

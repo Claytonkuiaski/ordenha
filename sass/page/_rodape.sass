@@ -106,7 +106,29 @@ footer
 				li 
 					i 
 						font-size: 30px	
-
 		.youtube
 			a 
-				color: $vermelho					
+				color: $vermelho	
+
+.vaca-feliz 
+	+make-sm-column(3)
+	+make-sm-column-offset(9)
+	img 
+		width: 330px			
+		margin-top: -714px		
+	+breakpoint($pc)
+		margin-top: -12px	
+	+breakpoint($tablet)
+		img
+			width: 150px
+			margin-top: -150px
+			margin-left: 50px
+	+breakpoint($celubot)
+		display: none		
+.leite
+	+make-sm-column(3)		
+	img 
+		width: 250px	
+		margin-top: -700px	
+	+breakpoint($tablet)
+		display: none	
